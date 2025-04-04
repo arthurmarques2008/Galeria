@@ -1,9 +1,81 @@
-<html lang="pt-br"><head>
-    <meta charset="UTF-8">
-    <title>Nova Janela</title>
-</head>
-<body>
-    <h1>Bem-vindo à nova janela!</h1>
-    <p>Este é o conteúdo da nova página do seu projeto Django.</p>
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfólio de Imagens</title>
+    </head>
+    <body>
+        <h1>Skins do Singed(Campeão do jogo league of legends)</h1>
+        <figure>
+            <img src="{% static 'singed-classic-762x.jpg'%}" alt="Singed Clássico">
+            
+            <figcaption>Imagem1: Singed Clássico</figcaption>
+        </figure>
 
-</body></html>
+        <figure>
+            <img src="{% static 'singed-riot-squad-762x.jpg'%}" alt="Singed pelotão riot">
+
+            <figcaption>Imagem2: Singed Pelotão riot</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-hextech-762x.jpg'%}" alt="Singed Hextech">
+
+            <figcaption>Imagem3: Singed Hextech</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-surfer-762x.jpg'%}" alt="Singed Surfista">
+
+            <figcaption>Imagem4: Singed Surfista</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-mad-scientist-762x.jpg'%}" alt="Singed Cientista Louco">
+
+            <figcaption>Imagem5: Singed Cientista Louco</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-augmented-762x.jpg'%}" alt="Singed Aprimorado">
+
+            <figcaption>Imagem6: Singed Aprimorado</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-snow-day-762x.jpg'%}" alt="Singed Dia Nevado">
+
+            <figcaption>Imagem7: Singed Dia Nevado</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-ssw-762x.jpg'%}" alt="Singed SSW">
+
+            <figcaption>Imagem8: Singed SSW</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-black-scourge-762x.jpg'%}" alt="Singed Flagelo Negro">
+
+            <figcaption>Imagem9: Singed Flagelo Negro</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-beekeeper-762x.jpg'%}" alt="Singed Apicultor">
+
+            <figcaption>Imagem10: Singed Apicultor</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-resistance-762x.jpg'%}" alt="Singed da Resistência">
+
+            <figcaption>Imagem11: Singed da Resistência</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{% static 'singed-astronaut-762x.jpg'%}" alt="Singed Astronauta">
+
+            <figcaption>Imagem12: Singed Astronauta</figcaption>
+        </figure>
+    </body>
+</html>
