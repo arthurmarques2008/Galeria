@@ -1,0 +1,19 @@
+figure {
+    text-align: center;
+}
+
+figure img {
+    margin: 0 auto;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+body{
+    background-color: darkslategrey;
+}

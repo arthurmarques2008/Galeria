@@ -1,21 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
     <title>Sobre</title>
-    <style>
-        body{
-                background-color: gray;
-            }
-        h1,h2,p{
-            text-align: center;
-        }
-
-    </style>
-
 </head>
 <body>
+    <h3><li><a href="{% url 'index' %}">Voltar a página principal</a></li></h3>
     <h1><i>Sobre os Criadores</i></h1>
     <h2><i>André Gonçalves</i></h2>
     <p>Olá meu Nome é André Gonçalves. Sou estudante de infomática e tenho interesse em desenvolvimento web e programação.<br>
