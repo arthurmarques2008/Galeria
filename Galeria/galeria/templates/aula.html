@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status da Aula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            max-width: 80%;
+            height: auto;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+
+        .em_aula {
+            background-color: #28a745; 
+            color: white;
+        }
+
+        .fora_da_aula {
+            background-color: #dc3545; 
+            color: white;
+        }
+    </style>
+</head>
+<body class="{{ status_aula }}">
+
+    <div class="content">
+        {% if status_aula == 'em_aula' %}
+            <h1>Estamos em horário de aula!</h1>
+            <img class="image" src="{% static 'sala-de-aula-invertida-flipped-classroom.jpg' %}" alt="Sala de Aula">
+        {% else %}
+            <h1>Somente pessoal autorizado!</h1>
+            <img class="image" src="{% static 'F194a.Jpg' %}" alt="Somente pessoal autorizado">
+        {% endif %}
+    </div>
+
+</body>
+</html>
